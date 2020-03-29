@@ -55,10 +55,10 @@ p {
     height: 20px;
 }
 
-.start_button {
+.contact_button {
     margin-left: 5px;
     height: 15px;
-    width: 60px;
+    width: 80px;
     display: flex;
     align-items: center;
     padding: 5px;
@@ -67,6 +67,13 @@ p {
     border-top: solid white 2px;
     border-left: solid white 2px;
 }
+
+/* .contact_button:hover {
+    border-top: solid rgb(59, 59, 59) 2px;
+    border-left: solid rgb(59, 59, 59) 2px;
+    border-bottom: solid white 2px;
+    border-right: solid white 2px;
+} */
 
 .clock_button {
     margin-right: 5px;
@@ -79,4 +86,37 @@ p {
     border-left: solid grey 2px;
     border-bottom: solid white 2px;
     border-right: solid white 2px;
+}
+
+.linkedin, .github, .facebook , .telephone {
+    display: flex;
+    align-items: center;
+    padding-left: 2px;
+}
+
+.linkedin:hover, .github:hover, .facebook:hover , .telephone:hover {
+    background-color: mediumblue;
+}
+
+.contact_bar a {
+    margin: 0 0 0 10px;
+    color: black;
+    width: 180px;
+    height: 48px;
+}
+
+.contact_bar a:hover {
+    color: white;
+}
+
+.contact_bar {
+    background-color:rgb(189, 189, 189);
+    width: 200px;
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+    border-top: solid white 2px;
+    border-left: solid white 2px;
+    position: absolute;
+    margin-left: 5px;
+    display: none;
 }
