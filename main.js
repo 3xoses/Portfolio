@@ -18,18 +18,10 @@ showTime();
 
 const contactButtonHover = document.querySelector(".contact_button");
 const showContactBar = document.querySelector(".contact_bar");
-const addHover = function() {
-    contactButtonHover.style.borderLeft = "solid rgb(59, 59, 59) 2px"
-    contactButtonHover.style.borderTop = "solid rgb(59, 59, 59) 2px"
-    contactButtonHover.style.borderRight = "solid white 2px"
-    contactButtonHover.style.borderBottom = "solid white 2px"
-    showContactBar.style.display = "block"
-};
-// const removeHover = function() {
-//     contactButtonHover.style.borderLeft = "solid white 2px"
-//     contactButtonHover.style.borderTop = "solid white 2px"
-//     contactButtonHover.style.borderRight = "solid rgb(59, 59, 59) 2px"
-//     contactButtonHover.style.borderBottom = "solid rgb(59, 59, 59) 2px"
-// };
 
-contactButtonHover.addEventListener("click", addHover);
+const addToggle = function() {
+    contactButtonHover.classList.toggle("contact_button-toggle");
+    showContactBar.classList.toggle("contact_bar-toggle");
+};
+
+contactButtonHover.addEventListener("click", addToggle);

@@ -68,12 +68,12 @@ p {
     border-left: solid white 2px;
 }
 
-/* .contact_button:hover {
+.contact_button-toggle {
     border-top: solid rgb(59, 59, 59) 2px;
     border-left: solid rgb(59, 59, 59) 2px;
     border-bottom: solid white 2px;
     border-right: solid white 2px;
-} */
+}
 
 .clock_button {
     margin-right: 5px;
@@ -119,4 +119,8 @@ p {
     position: absolute;
     margin-left: 5px;
     display: none;
+}
+
+.contact_bar-toggle {
+    display: block;
 }
