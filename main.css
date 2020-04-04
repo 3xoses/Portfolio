@@ -1,6 +1,7 @@
 html {
     height: 100%;
     width: 100%;
+    cursor: default;
 }
 body {
     min-width: 100%;
@@ -41,7 +42,7 @@ p {
     border-top: solid white 2px;
     position: absolute;
     bottom: 10px;
-    margin-bottom: -2px;
+    margin-bottom: -19px;
 }
 
 .footer p {
@@ -116,11 +117,105 @@ p {
     border-bottom: solid black 2px;
     border-top: solid white 2px;
     border-left: solid white 2px;
-    position: absolute;
+    position: relative;
     margin-left: 5px;
     display: none;
 }
 
 .contact_bar-toggle {
     display: block;
+}
+
+.folder {
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    margin-top: -280px;
+}
+
+.folder_placeholder, .folder_icons {
+    display: flex;
+    align-items: center;
+}
+
+.folder_background {
+    background-color: rgb(189, 189, 189);
+    width: 40%;
+    height: 380px;
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+    border-top: solid white 2px;
+    border-left: solid white 2px;
+}
+
+.folder_header {
+    width: 98%;
+    height: 23px;
+    background-color: rgb(5, 5, 143);
+    margin: 0 auto;
+    margin-top: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.folder_placeholder img {
+    width: 25px;
+    height: 20px;
+}
+
+.folder_placeholder a {
+    color: white;
+}
+
+.folder_icons img {
+    width: 16px;
+    height: 15px;
+    background-color:  rgb(189, 189, 189);
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+    border-top: solid white 2px;
+    border-left: solid white 2px;
+    margin-right: 2px;
+}
+
+.folder_body {
+    background-color: white;
+}
+
+.folder_nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: -25px;
+    margin-top: 3px;
+}
+
+.folder_nav li:nth-child(2), .folder_nav li:nth-child(3), .folder_nav li:nth-child(4) {
+    margin-left: 10px;
+}
+
+.folder_body {
+    width: 98%;
+    height: 80%;
+    margin: 0 auto;
+    border-left: solid black 2px;
+    border-top: solid black 2px;
+    border-bottom: solid white 2px;
+    border-right: solid white 2px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-size: 0.9rem;
+}
+
+.folder_body img {
+    width: 48px;
+    height: 38px;
+}
+
+.branding, .landing_pages, .threeD_projects, .prototypes, .animations {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3px;
 }
