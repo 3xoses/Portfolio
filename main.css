@@ -179,10 +179,6 @@ p {
     margin-right: 2px;
 }
 
-.folder_body {
-    background-color: white;
-}
-
 .folder_nav ul {
     display: flex;
     list-style: none;
@@ -204,8 +200,10 @@ p {
     border-right: solid white 2px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0 auto;
     font-size: 0.9rem;
+    background-color: white;
 }
 
 .folder_body img {
