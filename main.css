@@ -15,14 +15,19 @@ body {
     overflow: hidden;
 }
 
-img {
+.icons img, .contact_bar img {
     width: 3rem;
     height: 3rem;
 }
 
-p {
+.icons p {
     color: white;
     margin-top: 0;
+}
+
+.icons a {
+    color: white;
+    text-decoration: none;
 }
 
 .icons {
@@ -107,7 +112,6 @@ p {
     width: 180px;
     height: 48px;
 }
-
 .contact_bar a:hover {
     color: white;
 }
@@ -139,6 +143,7 @@ p {
 .folder_aboutMe p {
     color: black;
     padding: 5px;
+    margin-top: 2px;
 }
 
 .folder_placeholder, .folder_icons, .folder_icons_aboutMe {
