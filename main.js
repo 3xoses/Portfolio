@@ -26,3 +26,25 @@ const addToggle = function() {
 };
 
 contactButtonHover.addEventListener("click", addToggle);
+
+//show folder my projects
+
+const myProjectsFolder = document.querySelector(".folder");
+const myComputerIcon = document.querySelector(".my_computer_icon");
+
+const showMyProjectsFolder = function() {
+    myProjectsFolder.style.display = "flex";
+};
+
+myComputerIcon.addEventListener("click", showMyProjectsFolder);
+
+//close folder my projects 
+
+const crossIconFolder = document.querySelector (".folder_icons img:nth-child(3)");
+const closeProjectsFolder = document.querySelector(".folder");
+
+const closeMyProjectsFolder = function() {
+    closeProjectsFolder.style.display = "none";
+}
+
+crossIconFolder.addEventListener("click", closeMyProjectsFolder);
