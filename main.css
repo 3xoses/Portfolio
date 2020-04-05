@@ -131,12 +131,17 @@ p {
     margin-bottom: 33px;
 }
 
-.folder {
+.folder, .folder_aboutMe {
     display: none;
     justify-content: center;
-}    
+}   
 
-.folder_placeholder, .folder_icons {
+.folder_aboutMe p {
+    color: black;
+    padding: 5px;
+}
+
+.folder_placeholder, .folder_icons, .folder_icons_aboutMe {
     display: flex;
     align-items: center;
 }
@@ -171,7 +176,8 @@ p {
     color: white;
 }
 
-.folder_icons img {
+.folder_icons img,
+.folder_icons_aboutMe img {
     width: 16px;
     height: 15px;
     background-color:  rgb(189, 189, 189);

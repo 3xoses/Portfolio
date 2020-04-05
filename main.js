@@ -27,7 +27,7 @@ const addToggle = function() {
 
 contactButtonHover.addEventListener("click", addToggle);
 
-//show folder my projects
+//show my projects folder
 
 const myProjectsFolder = document.querySelector(".folder");
 const myComputerIcon = document.querySelector(".my_computer_icon");
@@ -38,7 +38,7 @@ const showMyProjectsFolder = function() {
 
 myComputerIcon.addEventListener("click", showMyProjectsFolder);
 
-//close folder my projects 
+//close my project folder
 
 const crossIconFolder = document.querySelector (".folder_icons img:nth-child(3)");
 const closeProjectsFolder = document.querySelector(".folder");
@@ -48,3 +48,23 @@ const closeMyProjectsFolder = function() {
 }
 
 crossIconFolder.addEventListener("click", closeMyProjectsFolder);
+
+// show about me folder 
+
+const aboutMeIcon = document.querySelector (".network_icon");
+const aboutMeFolder = document.querySelector (".folder_aboutMe");
+
+const showAboutMeFolder = function () {
+    aboutMeFolder.style.display = "flex";
+};
+
+aboutMeIcon.addEventListener ("click", showAboutMeFolder);
+
+// close about me folder 
+const crossIconAboutMeFolder = document.querySelector (".folder_icons_aboutMe img:nth-child(3)");
+
+const closeIconAboutMeFolder = function () {
+    aboutMeFolder.style.display = "none";
+};
+
+crossIconAboutMeFolder.addEventListener("click", closeIconAboutMeFolder);
